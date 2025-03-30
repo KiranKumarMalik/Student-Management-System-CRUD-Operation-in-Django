@@ -110,15 +110,15 @@
             </table>
             <div style="margin-top: 20px; text-align: center;">
               {% if page_obj.has_previous %}
-                  <a href="?page=1"><button>First</button></a>
-                  <a href="?page={{ page_obj.previous_page_number }}"><button>Previous</button></a>
+                  <a href="?page=1"><button class="btn btn-primary">First</button></a>
+                  <a href="?page={{ page_obj.previous_page_number }}"><button class="btn btn-dark">Previous</button></a>
               {% endif %}
           
               <span> Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }} </span>
           
               {% if page_obj.has_next %}
-                  <a href="?page={{ page_obj.next_page_number }}"><button>Next</button></a>
-                  <a href="?page={{ page_obj.paginator.num_pages }}"><button>Last</button></a>
+                  <a href="?page={{ page_obj.next_page_number }}"><button class="btn btn-success">Next</button></a>
+                  <a href="?page={{ page_obj.paginator.num_pages }}"><button class="btn btn-warning">Last</button></a>
               {% endif %}
           </div>
           </div>
