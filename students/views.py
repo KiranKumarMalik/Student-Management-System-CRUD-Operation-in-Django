@@ -1,4 +1,5 @@
 from django.http import HttpResponseRedirect
+from django.core.paginator import Paginator
 from django.shortcuts import render
 from django.urls import reverse
 
@@ -8,9 +9,13 @@ from .forms import StudentForm
 
 # Create your views here.
 def index(request):
-  return render(request, 'students/index.html', {
-    'students': Student.objects.all()
-  })
+    student_list = Student.objects.all().order_by('id')  # Order by ID
+    paginator = Paginator(student_list, 10)  # Show 10 students per page
+
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)  # Get the current page
+
+    return render(request, 'students/index.html', {'page_obj': page_obj, 'students': student_list})
 
 
 def view_student(request, id):
@@ -28,6 +33,7 @@ def add(request):
       course_name = form.cleaned_data['course']
       new_field_of_study = form.cleaned_data['field_of_study']
       new_gpa = form.cleaned_data['gpa']
+      new_gender = form.cleaned_data['gender']
 
       new_student = Student(
         student_number=new_student_number,
@@ -36,7 +42,8 @@ def add(request):
         email=new_email,
         course=course_name,
         field_of_study=new_field_of_study,
-        gpa=new_gpa
+        gpa=new_gpa,
+        gender=new_gender
       )
       new_student.save()
       return render(request, 'students/add.html', {
