@@ -11,11 +11,10 @@ from .forms import StudentForm
 def index(request):
     student_list = Student.objects.all().order_by('id')  # Order by ID
     paginator = Paginator(student_list, 10)  # Show 10 students per page
-
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)  # Get the current page
 
-    return render(request, 'students/index.html', {'page_obj': page_obj, 'students': student_list})
+    return render(request, 'students/index.html', {'page_obj': page_obj})
 
 
 def view_student(request, id):
