@@ -25,6 +25,7 @@ def add(request):
       new_first_name = form.cleaned_data['first_name']
       new_last_name = form.cleaned_data['last_name']
       new_email = form.cleaned_data['email']
+      course_name = form.cleaned_data['course']
       new_field_of_study = form.cleaned_data['field_of_study']
       new_gpa = form.cleaned_data['gpa']
 
@@ -33,6 +34,7 @@ def add(request):
         first_name=new_first_name,
         last_name=new_last_name,
         email=new_email,
+        course=course_name,
         field_of_study=new_field_of_study,
         gpa=new_gpa
       )

@@ -19,8 +19,9 @@
                   <th scope="col">First Name</th>
                   <th scope="col">Last Name</th>
                   <th scope="col">Email</th>
+                  <th scope="col">Course</th>
                   <th scope="col">Field of Study</th>
-                  <th scope="col">GPA</th>
+                  <th scope="col">CGPA</th>
                   <th scope="col">Actions</th>
                 </tr>
               </thead>
@@ -31,6 +32,7 @@
                     <td>{{ student.first_name }}</td>
                     <td>{{ student.last_name }}</td>
                     <td>{{ student.email }}</td>
+                    <td>{{ student.course }}</td>
                     <td>{{ student.field_of_study }}</td>
                     <td>{{ student.gpa }}</td>
                     <td>
@@ -53,11 +55,11 @@
                             <div class="modal-body">
                               <ul class="list-unstyled">
                                 <li>Student Number: <strong>{{ student.student_number }}</strong></li>
-                                <li>First Name: <strong>{{ student.first_name }}</strong></li>
-                                <li>Last Name: <strong>{{ student.last_name }}</strong></li>
+                                <li>Student Name: <strong>{{ student.first_name }} {{ student.last_name }}</strong></li>
                                 <li>Email: <strong>{{ student.email }}</strong></li>
+                                <li>Course: <strong>{{ student.course }}</strong></li>
                                 <li>Field of Study: <strong>{{ student.field_of_study }}</strong></li>
-                                <li>GPA: <strong>{{ student.gpa }}</strong></li>
+                                <li>CGPA: <strong>{{ student.gpa }}</strong></li>
                               </ul>
                             </div>
                             <div class="modal-footer">
