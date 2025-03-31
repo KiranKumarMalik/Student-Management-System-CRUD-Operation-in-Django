@@ -58,9 +58,9 @@
                               <ul class="list-unstyled">
                                 <li>Student Number: <strong>{{ student.student_number }}</strong></li>
                                 <li>Student Name: <strong>{{ student.first_name }} {{ student.last_name }}</strong></li>
-                                <li>Gender: <strong>{{ student.gender }}</strong></li>
+                                <li>Gender: <strong>{{ student.get_gender_display }}</strong></li>
                                 <li>Email: <strong>{{ student.email }}</strong></li>
-                                <li>Course: <strong>{{ student.course }}</strong></li>
+                                <li>Course: <strong>{{ student.get_course_display }} ({{ student.course }})</strong></li>
                                 <li>Field of Study: <strong>{{ student.field_of_study }}</strong></li>
                                 <li>CGPA: <strong>{{ student.gpa }}</strong></li>
                               </ul>
