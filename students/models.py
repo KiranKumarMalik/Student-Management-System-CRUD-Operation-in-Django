@@ -14,8 +14,17 @@ class Student(models.Model):
         ('MTECH', 'Masters in Technology'),
         ('Bachelors', 'Bachelors'),
         ('Masters', 'Masters'),
+        ('PhD', 'PhD'),
+        ('BBA', 'Bachelors in Business Administration'),
+        ('MBA', 'Masters in Business Administration'),
+        ('MCA', 'Masters in Computer Applications'),
+        ('BCom', 'Bachelor of Commerce'),
+        ('MCom', 'Masters in Commerce'),
+        ('BSc', 'Bachelor of Science'),
+        ('MSc', 'Masters in Science'),
+        ('BCA', 'Bachelor of Computer Applications'),
         ('Diploma', 'Diploma'),
-        ('ITI', 'ITI'),
+        ('ITI', 'Industrial Training Institute'),
     ]
   student_number = models.PositiveIntegerField(unique=True)
   first_name = models.CharField(max_length=50)
