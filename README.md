@@ -28,7 +28,7 @@ Install the following prerequisites:
 From the **root** directory, run:
 
 ```bash
-python -m venv venv
+python -m virtualenv virtualenv_name
 ```
 
 ### 2. Activate the virtual environment
