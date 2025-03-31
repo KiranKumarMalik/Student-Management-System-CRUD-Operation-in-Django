@@ -2,6 +2,7 @@ from django.http import HttpResponseRedirect
 from django.core.paginator import Paginator
 from django.shortcuts import render
 from django.urls import reverse
+from django.contrib import messages
 
 from .models import Student
 from .forms import StudentForm
@@ -78,4 +79,5 @@ def delete(request, id):
   if request.method == 'POST':
     student = Student.objects.get(pk=id)
     student.delete()
+    messages.success(request, f"Student {student.first_name} {student.last_name} has been deleted successfully.")
   return HttpResponseRedirect(reverse('index'))

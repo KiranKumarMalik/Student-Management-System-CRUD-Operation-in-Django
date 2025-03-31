@@ -6,8 +6,8 @@
   <div class="col-12">
     {% if page_obj.object_list %}
     <div class="card bg-light ms-4 me-4 mb-4">
-      <div class="card-header bg-info text-white">
-        <i class="fa-solid fa-list fa-lg"></i> Student Records
+      <div class="card-header bg-primary text-white">
+        <i class="fa-solid fa-users"></i> Student Records
       </div>
       <div class="card-body">
         <p class="card-text">
@@ -15,6 +15,7 @@
             <table class="table table-hover">
               <thead class="table-dark">
                 <tr>
+                  <th scope="col">SL. NO</th>
                   <th scope="col">Student Number</th>
                   <th scope="col">First Name</th>
                   <th scope="col">Last Name</th>
@@ -28,6 +29,7 @@
               <tbody>
                 {% for student in page_obj.object_list %}
                   <tr>
+                    <td>{{ forloop.counter0|add:page_obj.start_index }}</td>
                     <td>{{ student.student_number }}</td>
                     <td>{{ student.first_name }}</td>
                     <td>{{ student.last_name }}</td>

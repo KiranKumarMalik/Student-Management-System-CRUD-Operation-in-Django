@@ -43,5 +43,42 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const courseSelect = document.getElementById("course-select");
+          const fieldSelect = document.getElementById("field-select");
+      
+          // Field of Study options based on Course
+          const fieldOptions = {
+              "BTECH": ["Computer Science", "Mechanical", "Electrical"],
+              "MTECH": ["Data Science", "Electronics", "Robotics"],
+              "Bachelors": ["Economics", "Physics", "Mathematics"],
+              "Masters": ["Finance", "Biotechnology", "Psychology"],
+              "Diploma": ["Business Management", "Graphic Design", "Marketing"],
+              "ITI": ["Welding", "Fitting", "Electrician"]
+          };
+      
+          function updateFieldOptions(selectedCourse) {
+              fieldSelect.innerHTML = ""; // Clear previous options
+      
+              if (fieldOptions[selectedCourse]) {
+                  fieldOptions[selectedCourse].forEach(field => {
+                      let option = document.createElement("option");
+                      option.value = field;
+                      option.textContent = field;
+                      fieldSelect.appendChild(option);
+                  });
+              }
+          }
+      
+          // Run when page loads
+          updateFieldOptions(courseSelect.value);
+      
+          // Change field options when course changes
+          courseSelect.addEventListener("change", function() {
+              updateFieldOptions(this.value);
+          });
+      });
+      </script>
   </body>
 </html>
