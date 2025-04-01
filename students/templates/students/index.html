@@ -38,7 +38,7 @@
               <thead class="table-dark">
                 <tr>
                   <th scope="col">SL. NO</th>
-                  <th scope="col">Student Number</th>
+                  <th scope="col">Registration Number</th>
                   <th scope="col">First Name</th>
                   <th scope="col">Last Name</th>
                   <th scope="col">Email</th>
@@ -78,7 +78,7 @@
                             </div>
                             <div class="modal-body">
                               <ul class="list-unstyled">
-                                <li>Student Number: <strong>{{ student.student_number }}</strong></li>
+                                <li>Registration Number: <strong>{{ student.student_number }}</strong></li>
                                 <li>Student Name: <strong>{{ student.first_name }} {{ student.last_name }}</strong></li>
                                 <li>Gender: <strong>{{ student.get_gender_display }}</strong></li>
                                 <li>Email: <strong>{{ student.email }}</strong></li>
@@ -120,7 +120,7 @@
                             <div class="modal-footer">
                               <form action="{% url 'delete' student.id %}" method="POST">
                                 {% csrf_token %}
-                                <input type="submit" class="btn btn-primary" value="Delete">
+                                <input type="submit" class="btn btn-danger" value="Delete">
                               </form>
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                             </div>
