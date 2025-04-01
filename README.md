@@ -20,6 +20,16 @@ This is a student management system built using **Django 4**, **HTML 5**, **CSS 
 
 ![confirmation](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/f286d41a576a3f5b1c88f214d93bf0523e97849a/ss/Screenshot%202025-04-01%20120140.png)
 
+# 5. Check updated details
+![checkupdated](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/ecff906eb307f6a337aa0289882fc4bde8d72977/ss/Screenshot%202025-04-01%20120206.png)
+
+# 5. Delete a student record
+![delete](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/ecff906eb307f6a337aa0289882fc4bde8d72977/ss/Screenshot%202025-04-01%20120229.png)
+
+# 5. Check student table
+![delete](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/ecff906eb307f6a337aa0289882fc4bde8d72977/ss/Screenshot%202025-04-01%20120242.png)
+
+
 ## Table of Contents 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
