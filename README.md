@@ -2,8 +2,15 @@
 
 This is a student management system built using **Django 4**, **HTML 5**, **CSS 3**, and **Bootstrap 5** with a **Bootswatch** theme.
 
-# 1. Home Page
+# 1. Home Page (All Student Records)
 ![home](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/49896ea91a48d986081515eb9997b37d14403767/ss/home.png)
+
+# 1. Add Student
+![add](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/ee8d86bb4cdb9c873b199701e99a958caaccbe65/ss/Screenshot%202025-04-01%20114722.png)
+
+![check](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/ee8d86bb4cdb9c873b199701e99a958caaccbe65/ss/Screenshot%202025-04-01%20114641.png)
+
+![viewdetails](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/ee8d86bb4cdb9c873b199701e99a958caaccbe65/ss/Screenshot%202025-04-01%20114649.png)
 
 ## Table of Contents 
 - [Prerequisites](#prerequisites)
