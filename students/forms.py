@@ -26,3 +26,15 @@ class StudentForm(forms.ModelForm):
       'gpa': forms.NumberInput(attrs={'class': 'form-control'}),
       'gender': forms.Select(attrs={'class': 'form-control'}),
     }
+
+class StudentFilterForm(forms.Form):
+    first_name = forms.CharField(required=False, label="First Name", widget=forms.TextInput(attrs={'class': 'form-control'}))
+    last_name = forms.CharField(required=False, label="Last Name", widget=forms.TextInput(attrs={'class': 'form-control'}))
+    student_number = forms.IntegerField(required=False, label="Student Number", widget=forms.NumberInput(attrs={'class': 'form-control'}))
+    gender = forms.ChoiceField(choices=[('', 'All Gender')] + Student.GENDER_CHOICES, required=False, widget=forms.Select(attrs={'class': 'form-control'}))
+    email = forms.EmailField(required=False, label="Email", widget=forms.EmailInput(attrs={'class': 'form-control'}))
+    course = forms.ChoiceField(choices=[('', 'All Courses')] + Student.COURSE_CHOICES, required=False, widget=forms.Select(attrs={'class': 'form-control'}))
+    field_of_study = forms.CharField(required=False, label="Field of Study", widget=forms.TextInput(attrs={'class': 'form-control'}))
+    min_gpa = forms.FloatField(required=False, label="Min CGPA", widget=forms.NumberInput(attrs={'class': 'form-control', 'min': '0', 'max': '10', 'step': '0.1'}))
+    max_gpa = forms.FloatField(required=False, label="Max CGPA", widget=forms.NumberInput(attrs={'class': 'form-control', 'min': '0', 'max': '10', 'step': '0.1'}))
+
