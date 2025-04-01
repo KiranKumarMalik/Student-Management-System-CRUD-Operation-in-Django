@@ -6,11 +6,13 @@ This is a student management system built using **Django 4**, **HTML 5**, **CSS 
 ![home](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/49896ea91a48d986081515eb9997b37d14403767/ss/home.png)
 
 # 1. Add Student
-![add](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/ee8d86bb4cdb9c873b199701e99a958caaccbe65/ss/Screenshot%202025-04-01%20114722.png)
+![add](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/3e57c1d328d4bf946d6173f524399d76ea8c7c42/ss/Screenshot%202025-04-01%20120019.png)
 
-![check](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/ee8d86bb4cdb9c873b199701e99a958caaccbe65/ss/Screenshot%202025-04-01%20114641.png)
+![confirmation](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/3e57c1d328d4bf946d6173f524399d76ea8c7c42/ss/Screenshot%202025-04-01%20120029.png)
 
-![viewdetails](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/ee8d86bb4cdb9c873b199701e99a958caaccbe65/ss/Screenshot%202025-04-01%20114649.png)
+![check](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/3e57c1d328d4bf946d6173f524399d76ea8c7c42/ss/Screenshot%202025-04-01%20120045.png)
+
+![viewdetails](https://github.com/KiranKumarMalik/Student-Management-System-CRUD-Operation-in-Django/blob/3e57c1d328d4bf946d6173f524399d76ea8c7c42/ss/Screenshot%202025-04-01%20120055.png)
 
 ## Table of Contents 
 - [Prerequisites](#prerequisites)
