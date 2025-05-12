@@ -91,7 +91,6 @@ def add(request):
     'form': StudentForm()
   })
 
-
 def edit(request, id):
   if request.method == 'POST':
     student = Student.objects.get(pk=id)
